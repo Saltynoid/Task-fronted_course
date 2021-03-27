@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>Задать вопрос</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <!--[if lt IE 9]>
+	    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+    </head>
+    <body>
+        <form class="form" method="POST" action="https://60376bfd5435040017722533.mockapi.io/form">
+            <div class="question">
+                <p class="question__title">Задать вопрос</p>
+                <input class="question__name" type="text" name="name" required="required" placeholder="Фамилия Имя Отчество *" pattern="^[А-ЯЁ][а-яё]*([-][А-ЯЁ][а-яё]*)?\s[А-ЯЁ][а-яё]*\s[А-ЯЁ][а-яё]*$"/>
+                <input class="question__telephone"type="tel" name="phone" required="required" placeholder="Телефон *" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"/>
+                <input class="question__email" type="email" name="email" placeholder="Email" pattern="\S+@[a-z]+.[a-z]+"/>
+                <input class="question__button" type="submit" formmethod="post" value="ОТПРАВИТЬ ЗАПРОС">
+            </div>
+        </form>
+    </body>
+</html>
